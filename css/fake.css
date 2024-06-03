@@ -1,0 +1,297 @@
+/* General Settings */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Arrange elements vertically */
+    align-items: center;
+    background-color: #FFE4B5;
+}
+
+/* Header and Background */
+.header {
+    position: relative;
+    padding: 0;
+}
+
+.background-pic {
+    width: 100%;
+    height: 300px;
+    
+}
+
+.background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 7px solid white;
+    overflow: hidden; /* Ensure the profile picture stays within the circle */
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Make sure the image covers the circular area */
+}
+
+/* Name and Status */
+.name {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 60px; /* Adjust to account for profile-pic overlapping */
+}
+
+.status {
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+/* phone & mail */
+.phone, .mail {
+    color: #777;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center; 
+    height: 20px;
+    text-decoration: none;
+}
+
+/* Add margin between elements */
+.phone p, .phone a, .mail p, .mail a {
+    margin-right: 3px;
+}
+
+/* Location */
+.location a {
+    color: #777;
+    font-size: 0.73rem;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+/* Greeting Section */
+.greeting {
+    margin: 19px 0;
+}
+
+.greeting-content {
+    padding-top: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #DDDDDD;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Sections: SNS, MySkills, Description */
+.header, .myinfo, .sns, .myskills, .description {
+    max-width: 768px;
+    background-color: #FFFAF0	;
+    padding: 20px;
+    text-align: center;
+}
+
+.sns, .myskills, .description {
+    width: 88%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Box shadow on the bottom-right */
+}
+
+/* SNS Section */
+.sns {
+    margin: 10px 0 5px 0; /* Apply 10px margin-top and 5px margin-bottom */
+}
+
+.myskills {
+    margin: 5px 0 10px 0;
+}
+
+.title {
+    font-size: 1.2em;
+    margin-bottom: 10px; /* Space between title and icons */
+}
+
+.sns .title, .myskills .title {
+    text-align: center;
+    width: 100%;
+}
+
+.icon-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
+    gap: 20px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin: 0 auto; /* Center align the icons in their grid cells */
+    font-size: 2em; /* Adjust the font-size to make the icons larger */
+    color: #333; /* Set the color of the icons */
+}
+
+.skill {
+    background-color: #DDDDDD;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.skill .title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #333; 
+    padding-bottom: 5px; 
+}
+
+.skill ul {
+    list-style-type: none; 
+    padding-left: 0;
+}
+    
+.skill li {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.addprof {
+    margin-top: 18px;
+}
+
+.icon-for-certification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin: 0 auto; /* Center align the icons in their grid cells */
+    font-size: 2em; /* Adjust the font-size to make the icons larger */
+    color: #333; /* Set the color of the icons */
+}
+
+.certification-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+    border-radius: 10px; /* Match the border radius of the container */
+}
+
+.mywork {
+    background-color: #DDDDDD;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.mywork .title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #333; 
+    padding-bottom: 5px; 
+}
+
+.work-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* 親コンテナと一致するように角を丸くする */
+    object-fit: cover; /* 画像がコンテナをカバーするようにする */
+}
+
+.button-reset {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: underline; /* 下線を追加してリンクのように見せる */
+}
+
+.light-box {
+    position: fixed;
+    max-width: 375px;
+    max-height: calc(100% - 16px);
+    inset: 0;
+    margin: auto;
+    background-color: #DDDDDD;
+    padding: 16px;
+    overflow: auto;
+    box-sizing: border-box; /* パディングを含めたサイズ調整 */
+}
+
+.light-box img {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto; /* 画像を中央に配置 */
+}
+
+.light-box_button {
+    width: fit-content;
+    margin-inline: auto;
+    margin-top: 18px;
+    padding: 8px 18px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #fff;
+    color: #333;
+}
+
+.button-resume {
+    background-color: #DDDDDD;
+    width: fit-content;
+    margin-inline: auto;
+    padding: 8px 18px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.resume-box {
+    position: fixed;
+    max-width: 375px;
+    max-height: calc(100% - 100px);
+    inset: 0;
+    margin: auto;
+    background-color: #DDDDDD;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+.resume-box img {
+    max-width: 100%;
+    height: 550px;
+    display: block;
+    margin: 0 auto; /* 画像を中央に配置 */
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="background-pic"> <!-- Add background picture here -->
+        <img src="./picture/DSC00452.JPG" alt="Background picture" class="background-img">
+    </header> 
+
+    <main>
+        <section class="myinfo">
+            <div class="profile-pic"> <!-- Add profile picture here -->
+                <img src="./picture/OGAWA.jpg" alt="Profile icon" class="profile-img">
+            </div> 
+
+            <h1 class="name">小&nbsp;&nbsp;川&nbsp;&nbsp;尚&nbsp;&nbsp;利</h1> <!-- Add name here -->
+            <p class="name-roma">Naotoshi Ogawa</p>
+
+            <p class="status">工場長代理</p> <!-- Add status here -->
+
+            <div class="contact-info">
+                <div class="phone"> 
+                    <p>TEL:</p>
+                    <a href="tel:0292832833" class="phone">029-283-2833</a>
+                </div>
+
+                <div class="mail">
+                    <p>E-mail:</p>
+                    <a href="mailto:naotoshi-ogawa@ykcl.co.jp" class="mail">naotoshi-ogawa@ykcl.co.jp</a>
+                </div>
+
+                <div class="location"> <!-- Add address here -->
+                    <p>東海工場:</p>
+                    <a href="https://maps.app.goo.gl/Zuyrse65SoT4ZmRb8" class="fa fa-map-marker" target="_blank">  茨城県那珂郡東海村舟石川６３６−４</a>  
+                </div>
+            </div>
+
+            <section class="greeting">
+                <p class="aboutme">[自己紹介]</p> 
+                <p class="greeting-content">
+                    山﨑工業株式会社 工場長代理の小川尚利と申します。豊富な経験と実績を基に、私たちの強みを活かして、お客様の成功を支援します!
+                </p>
+
+                <p class="aboutme">[趣味]</p> 
+                <p class="greeting-content">
+                    ・釣り</br>
+                    ・キャンプ</br>
+                    ・DIY</br>
+                </p>
+            </section>
+
+            <button class="get-card" popovertarget="my-popover" popoveraction="show">Get Card</button>
+            
+            <div class="light-box" popover id="my-popover">
+                <img src="./picture/business-card.png" alt="Detailed work image">
+                <button type="button" class="light-box_button" popovertarget="my-popover" popoveraction="hide">閉じる</button>
+            </div>
+        </section>
+
+        <section class="sns">
+            <h2>Contact</h2>
+            <div class="icon-container">
+                <a href="https://www.instagram.com" target="_blank" class="icon"><i class="fab fa-instagram" aria-hidden="true"></i><span class="sr-only">Instagram</span></a>
+                <a href="https://www.facebook.com/?locale=ja_JP" target="_blank" class="icon"><i class="fab fa-facebook" aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
+                <a href="https://line.me/ja/" target="_blank" class="icon"><i class="fab fa-line" aria-hidden="true"></i><span class="sr-only">LINE</span></a>
+            </div>
+        </section>
+
+        <section class="company-info">
+            <h2>Compnay Info</h2>
+            <div class="mywork1">
+                <div class="work-title">山﨑工業 HP</div>
+                <a href="http://ykcl.co.jp/" target="_blank">
+                    <img src="./picture/work1.png" class="work-img" alt="Sample website screenshot">
+                </a>
+            </div>
+
+            <div class="mywork2">
+                <div class="work-title">企業案内</div>
+                <a href="./file/company-info.pdf" download="山﨑工業案内資料.pdf">
+                    <img src="./picture/work2.png" class="work-img" alt="Sample website screenshot">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© YAMAZAKI Inc.</p>
+    </footer>
+</body>
+</html>

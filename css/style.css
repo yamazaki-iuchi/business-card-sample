@@ -1,0 +1,210 @@
+/* CSS初期化 */
+h1, h2, p {
+    margin: 0;
+}
+
+/****************************************************************************************/
+/* General Settings */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Arrange elements vertically */
+    align-items: center;
+    background-color: #FFE4B5;
+    text-align: center; /*Set text at center*/
+}
+
+.myinfo, .sns, .company-info {
+    max-width: 768px;
+    background-color: #FFF8DC; /* 各セクションの背景色 */
+}
+
+.sns, .company-info {
+    margin: 8px auto; /* Centralize the sections */
+    width: 98%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Box shadow on the bottom-right */
+    padding-bottom: 13px;
+}
+
+/****************************************************************************************/
+/* Header and Background */
+header {
+    position: relative;
+    width: 100%;
+    height: 280px;
+}
+
+.background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+}
+
+/* Profile-pic */
+.profile-pic {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    position: absolute;
+    top: 170px; /* position of circle */
+    left: 50%;
+    transform: translateX(-50%);
+    border: 7px solid white;
+    overflow: hidden; /* Ensure the profile picture stays within the circle */
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Make sure the image covers the circular area */
+}
+
+/* Info */
+.myinfo {
+    margin-bottom: 10px;
+}
+
+h1 {
+    padding-top: 130px;
+    padding-bottom: 3px;
+}
+
+.name-roma{
+    padding-bottom: 12px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.phone, .mail, .location {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.phone p, .mail p, .location p {
+    margin: 0 5px 0 0;
+}
+
+.phone a, .mail a, .location a {
+    margin: 0;
+    color: #444444;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.phone, .mail, .location {
+    justify-content: center;
+    gap: 5px;
+}
+
+/* greering */
+.aboutme {
+    font-size: large;
+    font-weight: bold;
+    padding-bottom: 3px;
+}
+
+.greeting-content {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+}
+
+.get-card {
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/***********************************************************************************************/
+/* sns icon */
+.icon-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin: 0 auto; /* Center align the icons in their grid cells */
+    font-size: 2.5em; /* Adjust the font-size to make the icons larger */
+    color: #333; /* Set the color of the icons */
+}
+
+/***********************************************************************************************/
+/* h2 element -contact, company info- */
+h2 {
+    padding-top: 10px;
+    padding-bottom: 13px;
+}
+
+/***********************************************************************************************/
+/* company info */
+.mywork1, .mywork2 {
+    background-color: #DDDDDD;
+    padding: 10px;
+    margin: 0 10px 0 10px;
+    border-radius: 10px;
+}
+
+.mywork1 {
+    margin-bottom: 13px;
+}
+
+.work-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #333; 
+    padding-bottom: 5px; 
+}
+
+.work-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+    object-fit: cover; 
+}
+
+/* Lightbox styling */
+.light-box {
+    padding-top: 30px;
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+    border: none; 
+}
+
+/* Lightbox image styling */
+.light-box img {
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+    margin: auto; /* Center the image */
+}
+
+/* Lightbox button styling */
+.light-box_button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+}
